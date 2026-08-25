@@ -1,0 +1,494 @@
+/* =========================
+   MOBILE — 320px+
+========================= */
+
+.hero {
+  padding-top: 64px;
+  padding-bottom: 80px;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+.heroInfo {
+  width: 100%;
+}
+
+.title {
+  max-width: 100%;
+  margin-bottom: 20px;
+
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+
+  color: #191a15;
+}
+
+.accent {
+  font-style: italic;
+  color: #fc832c;
+}
+
+.textHero {
+  max-width: 100%;
+  margin-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+
+  color: #191a15;
+}
+
+.getStarted {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+
+  width: fit-content;
+  min-height: 48px;
+  padding: 14px 28px;
+
+  border-radius: 30px;
+
+  background-color: #fc832c;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: #fbfbfb;
+
+  transition: background-color 250ms ease;
+}
+
+.getStarted:hover,
+.getStarted:focus {
+  background-color: #f37113;
+}
+
+.getStarted img {
+  display: block;
+}
+
+.heroImage {
+  position: relative;
+
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.heroPhoto {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  border-radius: 10px;
+}
+
+/* question */
+
+.questionBadge {
+  position: absolute;
+  top: 30%;
+  left: -14px;
+  z-index: 2;
+
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+  background-color: #54be96;
+
+  transform: rotate(-15deg);
+}
+
+.questionBadge img {
+  display: block;
+
+  width: 8px;
+  height: auto;
+
+  transform: rotate(15deg);
+}
+
+/* people */
+
+.peopleBadge {
+  position: absolute;
+  top: 24px;
+  right: -12px;
+  z-index: 2;
+
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 9px;
+  background-color: #fbc75e;
+
+  transform: rotate(15deg);
+}
+
+.peopleBadge img {
+  display: block;
+
+  width: 19px;
+  height: 19px;
+
+  transform: rotate(-15deg);
+}
+
+/* experience card */
+
+.experienceCard {
+  position: absolute;
+  left: -8px;
+  bottom: 24px;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  width: 230px;
+  height: 86px;
+  padding: 16px;
+
+  border-radius: 16px;
+  background-color: #fc832c;
+}
+
+.checkIcon {
+  flex-shrink: 0;
+
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 11px;
+
+  background-color: #fbfbfb;
+}
+
+.checkIcon img {
+  display: block;
+
+  width: 17px;
+  height: auto;
+}
+
+.experienceInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  min-width: 0;
+}
+
+.experienceText {
+  white-space: nowrap;
+
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 1.2;
+
+  color: rgba(251, 251, 251, 0.5);
+}
+
+.experienceNumber {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1;
+
+  color: #fbfbfb;
+}
+
+/* =========================
+   TABLET — 768px+
+========================= */
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 96px;
+    padding-bottom: 110px;
+  }
+
+  .heroContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  .heroInfo {
+    width: 320px;
+    flex-shrink: 0;
+  }
+
+  .title {
+    width: 320px;
+    margin-bottom: 20px;
+
+    font-size: 46px;
+    line-height: 1.04;
+  }
+
+  .textHero {
+    width: 300px;
+    margin-bottom: 32px;
+
+    font-size: 14px;
+    line-height: 1.35;
+  }
+
+  .getStarted {
+    min-height: 48px;
+    padding: 14px 28px;
+
+    font-size: 16px;
+    gap: 14px;
+  }
+
+  .getStarted img {
+    width: 14px;
+    height: 14px;
+  }
+
+  .heroImage {
+    position: relative;
+
+    width: 300px;
+    flex-shrink: 0;
+    margin: 0;
+  }
+
+  .heroPhoto {
+    display: block;
+
+    width: 300px;
+    height: auto;
+    aspect-ratio: 464 / 526;
+
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .questionBadge {
+    top: 34%;
+    left: -18px;
+
+    width: 34px;
+    height: 34px;
+
+    border-radius: 9px;
+  }
+
+  .questionBadge img {
+    width: 9px;
+    height: auto;
+  }
+
+  .peopleBadge {
+    top: 26px;
+    right: -16px;
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 9px;
+  }
+
+  .peopleBadge img {
+    width: 21px;
+    height: 21px;
+  }
+
+  .experienceCard {
+    left: -48px;
+    bottom: 40px;
+
+    width: 220px;
+    height: 84px;
+    padding: 16px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    border-radius: 18px;
+  }
+
+  .checkIcon {
+    width: 40px;
+    height: 40px;
+    padding: 9px;
+    margin-right: 0;
+
+    flex-shrink: 0;
+    border-radius: 10px;
+  }
+
+  .checkIcon img {
+    display: block;
+    width: 17px;
+    height: auto;
+  }
+
+  .experienceInfo {
+    gap: 5px;
+  }
+
+  .experienceText {
+    font-size: 10px;
+    white-space: nowrap;
+  }
+
+  .experienceNumber {
+    font-size: 20px;
+  }
+}
+
+/* =========================
+   DESKTOP — 1440px+
+========================= */
+
+@media screen and (min-width: 1440px) {
+  .hero {
+    padding-top: 126px;
+    padding-bottom: 140px;
+  }
+
+  .heroContent {
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .heroInfo {
+    width: auto;
+  }
+
+  .title {
+    width: 595px;
+    margin-bottom: 20px;
+
+    font-size: 80px;
+    line-height: 1.025;
+  }
+
+  .textHero {
+    width: 510px;
+    margin-bottom: 40px;
+
+    font-size: 18px;
+    line-height: 1.33333;
+  }
+
+  .getStarted {
+    gap: 18px;
+
+    min-height: 60px;
+    padding: 18px 50px;
+
+    font-size: 20px;
+  }
+
+  .heroImage {
+    width: 464px;
+    max-width: none;
+  }
+
+  .heroPhoto {
+    width: 464px;
+    height: 526px;
+  }
+
+  .questionBadge {
+    top: 185px;
+    left: -34px;
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 10px;
+  }
+
+  .questionBadge img {
+    width: 10px;
+    height: 17px;
+  }
+
+  .peopleBadge {
+    top: 38px;
+    right: -39px;
+
+    width: 48px;
+    height: 48px;
+
+    border-radius: 10px;
+  }
+
+  .peopleBadge img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .experienceCard {
+    left: -100px;
+    bottom: 75px;
+
+    width: 311px;
+    height: 118px;
+    padding: 32px;
+
+    gap: 16px;
+
+    border-radius: 20px;
+  }
+
+  .checkIcon {
+    width: 54px;
+    height: 54px;
+
+    border-radius: 13px;
+  }
+
+  .checkIcon img {
+    width: 20px;
+    height: 15px;
+  }
+
+  .experienceInfo {
+    gap: 8px;
+    flex-shrink: 0;
+  }
+
+  .experienceText {
+    font-size: 14px;
+  }
+
+  .experienceNumber {
+    font-size: 24px;
+  }
+}

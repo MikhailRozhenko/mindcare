@@ -1,0 +1,276 @@
+/* =========================
+   MOBILE — 320px+
+========================= */
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  background: rgba(25, 26, 21, 0.6);
+}
+
+.modal {
+  position: relative;
+  z-index: 1000;
+
+  width: 100%;
+  max-width: 100%;
+
+  padding: 40px 20px 24px;
+
+  border-radius: 20px;
+  background-color: #fbfbfb;
+}
+
+.closeButton {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+
+  width: 24px;
+  height: 24px;
+
+  padding: 0;
+  border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: transparent;
+  cursor: pointer;
+}
+
+.closeButton img {
+  display: block;
+
+  width: 24px;
+  height: 24px;
+}
+
+.title {
+  margin-bottom: 16px;
+
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+
+  color: #191a15;
+}
+
+.description {
+  margin-bottom: 28px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.35;
+
+  color: rgba(25, 26, 21, 0.5);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.name,
+.email,
+.password {
+  width: 100%;
+  height: 48px;
+
+  padding: 14px 16px;
+
+  border: 1px solid rgba(25, 26, 21, 0.1);
+  border-radius: 12px;
+
+  font-size: 16px;
+  line-height: 1.25;
+
+  color: #191a15;
+  background-color: transparent;
+}
+
+.name::placeholder,
+.email::placeholder,
+.password::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+
+  color: #191a15;
+}
+
+.passwordField {
+  position: relative;
+}
+
+.password {
+  padding-right: 52px;
+}
+
+.eyeButton {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+
+  transform: translateY(-50%);
+
+  width: 24px;
+  height: 24px;
+
+  padding: 0;
+  border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: transparent;
+  cursor: pointer;
+}
+
+.eyeButton img {
+  display: block;
+
+  width: 20px;
+  height: 20px;
+}
+
+.submitButton {
+  width: 100%;
+  height: 48px;
+
+  padding: 14px 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 30px;
+
+  background: #fc832c;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+
+  color: #fbfbfb;
+
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+/* =========================
+   TABLET — 768px+
+========================= */
+
+@media screen and (min-width: 768px) {
+  .modal {
+    max-width: 520px;
+
+    padding: 64px;
+
+    border-radius: 30px;
+  }
+
+  .closeButton {
+    top: 20px;
+    right: 20px;
+
+    width: 32px;
+    height: 32px;
+  }
+
+  .closeButton img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .title {
+    margin-bottom: 20px;
+
+    font-size: 40px;
+  }
+
+  .description {
+    margin-bottom: 40px;
+
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .name,
+  .email,
+  .password {
+    height: 52px;
+
+    padding: 16px 18px;
+  }
+
+  .password {
+    padding-right: 56px;
+  }
+
+  .eyeButton {
+    right: 16px;
+  }
+
+  .submitButton {
+    height: 52px;
+
+    padding: 16px 32px;
+  }
+}
+
+/* =========================
+   DESKTOP — 1440px+
+========================= */
+
+@media screen and (min-width: 1440px) {
+  .modal {
+    max-width: 565px;
+    height: 579px;
+  }
+
+  .name,
+  .email,
+  .password {
+    width: 438px;
+  }
+
+  .submitButton {
+    width: 438px;
+  }
+}
+
+.field {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.errorMessage {
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+
+  margin: 0;
+
+  font-size: 12px;
+  line-height: 1.2;
+  color: #e74c3c;
+}
+
+.field:last-of-type {
+  margin-bottom: 20px;
+}
