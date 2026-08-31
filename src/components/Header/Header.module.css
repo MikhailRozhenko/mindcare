@@ -18,6 +18,7 @@
 
 .active::after {
   content: '';
+  display: none;
 
   position: absolute;
   left: 50%;
@@ -84,6 +85,7 @@
   border: 1px solid rgba(25, 26, 21, 0.2);
   color: #191a15;
   background-color: transparent;
+
   transition:
     border-color 250ms ease,
     background-color 250ms ease,
@@ -161,6 +163,7 @@
   line-height: 1.25;
   letter-spacing: -0.01em;
   color: #191a15;
+
   transition:
     border-color 250ms ease,
     background-color 250ms ease,
@@ -229,6 +232,7 @@
   line-height: 1.25;
   letter-spacing: -0.01em;
   color: #191a15;
+
   transition:
     color 250ms ease,
     transform 250ms ease;
@@ -287,6 +291,10 @@
 ========================= */
 
 @media screen and (min-width: 768px) {
+  .active::after {
+    display: block;
+  }
+
   .userInfo {
     gap: 10px;
   }
@@ -307,6 +315,7 @@
     font-size: 14px;
 
     white-space: nowrap;
+
     transition:
       border-color 250ms ease,
       background-color 250ms ease,
@@ -362,6 +371,7 @@
     height: 48px;
     padding: 10px 20px;
     font-size: 14px;
+
     transition:
       border-color 250ms ease,
       background-color 250ms ease,
