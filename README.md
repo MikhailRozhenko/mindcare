@@ -4,6 +4,10 @@ Psychologists.Services is a web application for a company that provides psycholo
 
 The application allows users to browse psychologists, sort them by different criteria, add psychologists to favorites, view detailed information and reviews, and make an appointment with a selected psychologist.
 
+## Live Demo
+
+[View project](https://mindcare-six-rho.vercel.app/)
+
 ## Features
 
 - User registration, login and logout
@@ -17,6 +21,7 @@ The application allows users to browse psychologists, sort them by different cri
 - Load more functionality
 - Add and remove psychologists from favorites
 - Favorites are saved for authorized users
+- Favorites persist after page reload
 - Private Favorites page
 - Detailed information about psychologists
 - Client reviews
@@ -77,7 +82,13 @@ Main requirements include:
 Clone the repository:
 
 ```bash
-git clone YOUR_REPOSITORY_URL
+git clone https://github.com/MikhailRozhenko/mindcare.git
+```
+
+Go to the project directory:
+
+```bash
+cd mindcare
 ```
 
 Install dependencies:
@@ -92,6 +103,10 @@ Run the project locally:
 npm run dev
 ```
 
+## Repository
+
+[GitHub Repository](https://github.com/MikhailRozhenko/mindcare)
+
 ## Author
 
-Developed by Mikhail
+Developed by Mikhail Rozhenko

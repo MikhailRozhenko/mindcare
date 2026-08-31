@@ -15,7 +15,9 @@ import css from './Header.module.css';
 const Header = () => {
   const location = useLocation();
 
-  const isPsychologistsPage = location.pathname === '/psychologists';
+  const isInternalPage =
+    location.pathname === '/psychologists' ||
+    location.pathname === '/favorites';
   const { currentUser } = useContext(AuthContext);
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -52,7 +54,7 @@ const Header = () => {
     <>
       <header
         className={`${css.header} ${
-          isPsychologistsPage ? css.psychologistsHeader : ''
+          isInternalPage ? css.psychologistsHeader : ''
         }`}
       >
         <div className={`container ${css.headerContainer}`}>
