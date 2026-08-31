@@ -85,9 +85,10 @@ const Header = () => {
               {currentUser && (
                 <NavLink
                   className={({ isActive }) =>
-                    `${css.navLink} ${isActive ? css.active : ''}`
+                    `${css.mobileNavLink} ${isActive ? css.active : ''}`
                   }
                   to="/favorites"
+                  onClick={() => setIsMenuOpen(false)}
                 >
                   Favorites
                 </NavLink>
