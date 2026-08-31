@@ -84,6 +84,17 @@
   border: 1px solid rgba(25, 26, 21, 0.2);
   color: #191a15;
   background-color: transparent;
+  transition:
+    border-color 250ms ease,
+    background-color 250ms ease,
+    color 250ms ease;
+}
+
+.mobileLoginButton:hover,
+.mobileLoginButton:focus {
+  border-color: #fc832c;
+  background-color: rgba(252, 131, 44, 0.08);
+  color: #fc832c;
 }
 
 .mobileRegistrationButton {
@@ -150,6 +161,17 @@
   line-height: 1.25;
   letter-spacing: -0.01em;
   color: #191a15;
+  transition:
+    border-color 250ms ease,
+    background-color 250ms ease,
+    color 250ms ease;
+}
+
+.mobileLogoutButton:hover,
+.mobileLogoutButton:focus {
+  border-color: #fc832c;
+  background-color: rgba(252, 131, 44, 0.08);
+  color: #fc832c;
 }
 
 .menuButton {
@@ -285,6 +307,17 @@
     font-size: 14px;
 
     white-space: nowrap;
+    transition:
+      border-color 250ms ease,
+      background-color 250ms ease,
+      color 250ms ease;
+  }
+
+  .logoutButton:hover,
+  .logoutButton:focus {
+    border-color: #fc832c;
+    background-color: rgba(252, 131, 44, 0.08);
+    color: #fc832c;
   }
 
   .header {
@@ -329,6 +362,17 @@
     height: 48px;
     padding: 10px 20px;
     font-size: 14px;
+    transition:
+      border-color 250ms ease,
+      background-color 250ms ease,
+      color 250ms ease;
+  }
+
+  .loginButton:hover,
+  .loginButton:focus {
+    border-color: #fc832c;
+    background-color: rgba(252, 131, 44, 0.08);
+    color: #fc832c;
   }
 
   .registrationButton {
