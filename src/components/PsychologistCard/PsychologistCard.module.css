@@ -1,0 +1,418 @@
+.card {
+  border-radius: 24px;
+  width: 1184px;
+  background-color: #fbfbfb;
+  display: flex;
+  padding: 24px;
+}
+
+.avatarWrapper {
+  border: 2px solid rgba(252, 131, 44, 0.2);
+  border-radius: 30px;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-shrink: 0;
+  margin-right: 24px;
+}
+
+.onlineIndicator {
+  position: absolute;
+  top: 8px;
+  right: 13px;
+  width: 14px;
+  height: 14px;
+  border: 3px solid #fbfbfb;
+  border-radius: 100%;
+  background-color: #38cd3e;
+}
+
+.avatar {
+  border-radius: 15px;
+  width: 96px;
+  height: 96px;
+  background: #e0e0e0;
+  object-fit: cover;
+}
+
+.label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #8a8a89;
+}
+
+.name {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1;
+  color: #191a15;
+}
+
+.titleWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.cardInfo {
+  display: flex;
+  align-items: center;
+}
+
+.starIcon {
+  width: 15px;
+  height: 14px;
+}
+
+.starWrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.divider {
+  width: 1px;
+  height: 16px;
+  background-color: rgba(25, 26, 21, 0.2);
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
+.price {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #191a15;
+}
+
+.priceValue {
+  color: #38cd3e;
+  margin-left: 4px;
+  margin-right: 28px;
+}
+
+.favoriteButton {
+  background-color: transparent;
+  border: none;
+}
+
+.heartIcon {
+  width: 25px;
+  height: 22px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.detailsRow {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.detail {
+  width: fit-content;
+  margin: 0;
+  padding: 8px 12px;
+  border-radius: 24px;
+  background-color: #f3f3f3;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #191a15;
+}
+
+.detail span {
+  color: #8a8a89;
+}
+
+.about {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(25, 26, 21, 0.5);
+  margin-bottom: 14px;
+}
+
+.readMoreButton {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #191a15;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
+}
+
+.reviews {
+  margin-top: 48px;
+}
+
+.review {
+  margin-bottom: 40px;
+}
+
+.reviewHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.reviewerAvatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background-color: rgba(252, 131, 44, 0.2);
+  font-weight: 500;
+  font-size: 20px;
+  color: #fc832c;
+}
+
+.reviewerInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.reviewerName {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #191a15;
+}
+
+.reviewRating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500px;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #191a15;
+}
+
+.reviewComment {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(25, 26, 21, 0.5);
+}
+
+.appointmentButton {
+  margin-top: 16px;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 30px;
+  background-color: #fc832c;
+  color: #fbfbfb;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  cursor: pointer;
+}
+
+.starIcon {
+  width: 15px;
+  height: 14px;
+}
+
+/* =========================
+   TABLET
+   768px - 1439px
+========================= */
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .card {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .avatarWrapper {
+    width: 104px;
+    height: 104px;
+    margin-right: 20px;
+  }
+
+  .avatar {
+    width: 82px;
+    height: 82px;
+  }
+
+  .onlineIndicator {
+    top: 6px;
+    right: 10px;
+  }
+
+  .cardContent {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .cardHeader {
+    gap: 20px;
+  }
+
+  .cardInfo {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    row-gap: 8px;
+  }
+
+  .priceValue {
+    margin-right: 16px;
+  }
+
+  .detailsRow {
+    flex-wrap: wrap;
+  }
+
+  .detail {
+    font-size: 14px;
+  }
+
+  .reviews {
+    margin-top: 40px;
+  }
+
+  .review {
+    margin-bottom: 32px;
+  }
+}
+
+/* =========================
+   MOBILE
+   320px - 767px
+========================= */
+
+@media screen and (max-width: 767px) {
+  .card {
+    width: 100%;
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  .avatarWrapper {
+    width: 96px;
+    height: 96px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .avatar {
+    width: 76px;
+    height: 76px;
+  }
+
+  .onlineIndicator {
+    top: 5px;
+    right: 8px;
+  }
+
+  .cardContent {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .cardHeader {
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+
+  .name {
+    font-size: 22px;
+  }
+
+  .cardInfo {
+    width: 100%;
+    flex-wrap: wrap;
+    row-gap: 12px;
+  }
+
+  .divider {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  .price {
+    font-size: 14px;
+  }
+
+  .priceValue {
+    margin-left: 4px;
+    margin-right: 12px;
+  }
+
+  .favoriteButton {
+    padding: 0;
+    margin-left: auto;
+  }
+
+  .details {
+    margin-bottom: 20px;
+  }
+
+  .detailsRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .detail {
+    max-width: 100%;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .about {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .reviews {
+    margin-top: 32px;
+  }
+
+  .review {
+    margin-bottom: 28px;
+  }
+
+  .reviewHeader {
+    margin-bottom: 12px;
+  }
+
+  .reviewComment {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .appointmentButton {
+    width: 100%;
+    margin-top: 8px;
+  }
+}

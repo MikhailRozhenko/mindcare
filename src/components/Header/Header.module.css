@@ -1,6 +1,7 @@
 /* =========================
    MOBILE — 320px+
 ========================= */
+
 .header {
   position: relative;
   z-index: 998;
@@ -12,8 +13,23 @@
 }
 
 .active {
-  text-decoration: underline;
-  text-underline-offset: 4px;
+  position: relative;
+}
+
+.active::after {
+  content: '';
+
+  position: absolute;
+  left: 50%;
+  bottom: -12px;
+
+  width: 8px;
+  height: 8px;
+
+  border-radius: 100%;
+  background-color: #fc832c;
+
+  transform: translateX(-50%);
 }
 
 .mobileMenu {
@@ -74,6 +90,66 @@
   border: none;
   color: #fbfbfb;
   background-color: #fc832c;
+}
+
+/* =========================
+   MOBILE AUTH
+========================= */
+
+.mobileAuthButtons {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mobileUserInfo {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mobileUserData {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.mobileUserIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobileUserName {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  color: #191a15;
+}
+
+.mobileLogoutButton {
+  width: 100%;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(25, 26, 21, 0.2);
+  border-radius: 30px;
+
+  background-color: transparent;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  color: #191a15;
 }
 
 .menuButton {
@@ -189,6 +265,28 @@
 ========================= */
 
 @media screen and (min-width: 768px) {
+  .userInfo {
+    gap: 10px;
+  }
+
+  .userName {
+    margin: 0;
+
+    font-size: 14px;
+
+    white-space: nowrap;
+  }
+
+  .logoutButton {
+    height: 44px;
+
+    padding: 10px 18px;
+
+    font-size: 14px;
+
+    white-space: nowrap;
+  }
+
   .header {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -207,7 +305,7 @@
     align-items: center;
     justify-content: space-between;
     flex: 1;
-    margin-left: 130px;
+    margin-left: 60px;
   }
 
   .navigation {
@@ -283,6 +381,10 @@
   }
 }
 
+/* =========================
+   AUTHORIZED USER
+========================= */
+
 .userInfo {
   display: flex;
   align-items: center;
@@ -291,6 +393,13 @@
 .userName {
   margin-right: 28px;
   margin-left: 14px;
+
+  font-weight: 500;
+  font-size: 16px;
+
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  color: #191a15;
 }
 
 .logoutButton {
@@ -298,12 +407,17 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
+
   border: 1px solid rgba(25, 26, 21, 0.2);
   border-radius: 30px;
+
   padding: 14px 39px;
+
   width: fit-content;
   height: 48px;
+
   background: transparent;
+
   font-weight: 500;
   font-size: 16px;
 
@@ -312,11 +426,22 @@
   color: #191a15;
 }
 
-.userName {
-  font-weight: 500;
-  font-size: 16px;
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .userName {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 
-  line-height: 1.25;
-  letter-spacing: -0.01em;
-  color: #191a15;
+.userIcon {
+  transition: background-color 250ms ease;
+  cursor: pointer;
+}
+
+.userIcon:hover {
+  background-color: #f37113;
+}
+
+.psychologistsHeader {
+  background-color: #f5f5f5;
 }

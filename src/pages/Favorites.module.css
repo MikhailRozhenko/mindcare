@@ -1,0 +1,91 @@
+.favoritesPage {
+  min-height: 100vh;
+  background-color: #f3f3f3;
+  padding-top: 64px;
+  padding-bottom: 100px;
+}
+
+.cardsList {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.loadMoreButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 8px;
+  border-radius: 30px;
+  padding: 14px 48px;
+  width: 176px;
+  height: 48px;
+  background: #fc832c;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  color: #fbfbfb;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 64px;
+}
+
+.noResults {
+  margin: 40px 0;
+  font-size: 18px;
+  color: rgba(25, 26, 21, 0.5);
+}
+
+/* =========================
+   TABLET
+   768px - 1439px
+========================= */
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .favoritesPage {
+    padding-top: 48px;
+    padding-bottom: 80px;
+  }
+
+  .cardsList {
+    gap: 28px;
+  }
+
+  .loadMoreButton {
+    margin-top: 48px;
+  }
+
+  .noResults {
+    margin: 32px 0;
+  }
+}
+
+/* =========================
+   MOBILE
+   320px - 767px
+========================= */
+
+@media screen and (max-width: 767px) {
+  .favoritesPage {
+    padding-top: 32px;
+    padding-bottom: 64px;
+  }
+
+  .cardsList {
+    gap: 24px;
+  }
+
+  .loadMoreButton {
+    width: 100%;
+    max-width: 220px;
+    margin-top: 40px;
+  }
+
+  .noResults {
+    margin: 28px 0;
+    font-size: 16px;
+  }
+}

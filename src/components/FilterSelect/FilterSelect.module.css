@@ -1,0 +1,126 @@
+.filter {
+  width: 226px;
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.label {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28571;
+  color: #8a8a89;
+  margin-bottom: 8px;
+}
+
+.selectButton {
+  width: 226px;
+  height: 48px;
+  padding: 0 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  border-radius: 14px;
+  background-color: #fc832c;
+}
+
+.options {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  padding: 14px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  border-radius: 14px;
+  background-color: #ffffff;
+}
+
+.options button {
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+.selectSpan {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #fbfbfb;
+}
+
+.arrow {
+  width: 12px;
+  height: 7px;
+}
+
+.options {
+  border-radius: 14px;
+  width: 226px;
+  height: 216px;
+  box-shadow: 0 20px 69px 0 rgba(0, 0, 0, 0.07);
+  background: #fff;
+}
+
+.optionButton {
+  font-weight: 400;
+  font-size: 16px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  line-height: 1.25;
+  color: rgba(25, 26, 21, 0.3);
+  cursor: pointer;
+  transition: color 250ms ease;
+}
+
+.optionButton:hover {
+  color: #191a15;
+}
+
+.activeOption {
+  color: #191a15;
+}
+
+/* =========================
+   TABLET
+   768px - 1439px
+========================= */
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .filter {
+    width: 226px;
+    margin-bottom: 28px;
+  }
+
+  .selectButton {
+    width: 226px;
+  }
+
+  .options {
+    width: 226px;
+  }
+}
+
+/* =========================
+   MOBILE
+   320px - 767px
+========================= */
+
+@media screen and (max-width: 767px) {
+  .filter {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .selectButton {
+    width: 100%;
+  }
+
+  .options {
+    width: 100%;
+  }
+}

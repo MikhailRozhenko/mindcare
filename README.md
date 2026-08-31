@@ -1,16 +1,97 @@
-# React + Vite
+# Psychologists.Services
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Psychologists.Services is a web application for a company that provides psychological services.
 
-Currently, two official plugins are available:
+The application allows users to browse psychologists, sort them by different criteria, add psychologists to favorites, view detailed information and reviews, and make an appointment with a selected psychologist.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- User registration, login and logout
+- Firebase Authentication
+- Psychologists data stored in Firebase Realtime Database
+- Sorting psychologists:
+  - A to Z
+  - Z to A
+  - by price
+  - by rating
+- Load more functionality
+- Add and remove psychologists from favorites
+- Favorites are saved for authorized users
+- Private Favorites page
+- Detailed information about psychologists
+- Client reviews
+- Appointment form
+- Form validation with React Hook Form and Yup
+- Responsive design for mobile, tablet and desktop devices
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technologies
 
-## Expanding the ESLint configuration
+- React
+- Vite
+- React Router
+- Firebase Authentication
+- Firebase Realtime Database
+- React Hook Form
+- Yup
+- CSS Modules
+- React Hot Toast
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Pages
+
+### Home
+
+The Home page contains the main information about the service and a call-to-action button that redirects users to the Psychologists page.
+
+### Psychologists
+
+The Psychologists page displays psychologist cards and allows users to sort them, view additional information, add psychologists to favorites and make an appointment.
+
+### Favorites
+
+The Favorites page is available only to authorized users and displays psychologists added to favorites.
+
+## Design
+
+[Figma design](https://www.figma.com/file/I5vjNb0NsJOpQRnRpMloSY/Psychologists.Services?type=design&node-id=0-1&mode=design)
+
+## Technical Task
+
+The application was developed according to the provided technical requirements.
+
+Main requirements include:
+
+- Three application pages: Home, Psychologists and Favorites
+- User authentication with Firebase
+- Firebase Realtime Database
+- Psychologist cards
+- Sorting functionality
+- Load more functionality
+- Favorites functionality
+- Appointment modal
+- Form validation
+- Private Favorites route
+- Responsive layout from 320px to 1440px
+
+## Getting Started
+
+Clone the repository:
+
+```bash
+git clone YOUR_REPOSITORY_URL
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the project locally:
+
+```bash
+npm run dev
+```
+
+## Author
+
+Developed by Mikhail

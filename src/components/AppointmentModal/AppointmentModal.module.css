@@ -1,0 +1,396 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgba(25, 26, 21, 0.6);
+}
+
+.modal {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  padding: 64px 64px 40px;
+  border-radius: 30px;
+  background-color: #fbfbfb;
+}
+
+.closeButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.closeIcon {
+  width: 32px;
+  height: 32px;
+}
+
+.title {
+  margin-top: 12px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: #191a15;
+}
+
+.description {
+  margin: 0 0 40px;
+  max-width: 470px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(25, 26, 21, 0.5);
+}
+
+.psychologistInfo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 40px;
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.psychologistLabel {
+  margin: 0 0 4px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;
+  color: #8a8a89;
+}
+
+.psychologistName {
+  margin: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #191a15;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.formRow {
+  display: flex;
+  gap: 8px;
+}
+
+.field {
+  flex: 1;
+  min-width: 0;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  border: 1px solid rgba(25, 26, 21, 0.1);
+  border-radius: 12px;
+  background-color: transparent;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  color: #191a15;
+  outline: none;
+}
+
+.input {
+  height: 52px;
+  padding: 0 18px;
+}
+
+.textarea {
+  min-height: 116px;
+  padding: 16px 18px;
+  resize: none;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: #191a15;
+}
+
+.input:focus,
+.textarea:focus {
+  border-color: rgba(252, 131, 44, 0.6);
+}
+
+.error {
+  margin-top: 4px;
+  margin-left: 8px;
+  font-size: 12px;
+  line-height: 1.2;
+  color: #e74a3b;
+}
+
+.submitButton {
+  width: 100%;
+  height: 52px;
+  margin-top: 24px;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 30px;
+  background-color: #fc832c;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #fbfbfb;
+  cursor: pointer;
+  transition: background-color 250ms ease;
+}
+
+.submitButton:hover {
+  background-color: #f37113;
+}
+
+.success {
+  padding-top: 20px;
+}
+
+/* =========================
+   TIME SELECT
+========================= */
+
+.timeSelect {
+  position: relative;
+  width: 100%;
+}
+
+.timeButton {
+  width: 100%;
+  height: 52px;
+  padding: 0 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgba(25, 26, 21, 0.1);
+  border-radius: 12px;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 16px;
+  color: #191a15;
+  cursor: pointer;
+}
+
+.clockIcon {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.timeDropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  z-index: 20;
+  width: 180px;
+  padding: 16px;
+  border-radius: 14px;
+  background-color: #ffffff;
+  box-shadow: 0 20px 69px rgba(0, 0, 0, 0.12);
+}
+
+.timeDropdownTitle {
+  margin: 0 0 12px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #191a15;
+}
+
+.timeOptions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+.timeOption {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 16px;
+  text-align: left;
+  color: rgba(25, 26, 21, 0.5);
+  cursor: pointer;
+  transition: color 250ms ease;
+}
+
+.timeOption:hover {
+  color: #191a15;
+}
+
+/* =========================
+   TABLET
+   768px - 1439px
+========================= */
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .modal {
+    max-width: 560px;
+    padding: 56px 48px 40px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+}
+
+/* =========================
+   SMALL HEIGHT
+   Для ноутбуков / небольших
+   по высоте экранов
+========================= */
+
+@media screen and (max-height: 850px) and (min-width: 768px) {
+  .modal {
+    padding: 40px 48px 28px;
+  }
+
+  .closeButton {
+    top: 16px;
+    right: 16px;
+  }
+
+  .closeIcon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .title {
+    margin-top: 0;
+    margin-bottom: 14px;
+    font-size: 34px;
+    line-height: 1.1;
+  }
+
+  .description {
+    margin-bottom: 24px;
+    font-size: 14px;
+    line-height: 1.25;
+  }
+
+  .psychologistInfo {
+    margin-bottom: 24px;
+  }
+
+  .form {
+    gap: 10px;
+  }
+
+  .input,
+  .timeButton {
+    height: 46px;
+  }
+
+  .textarea {
+    min-height: 90px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  .submitButton {
+    height: 46px;
+    margin-top: 10px;
+  }
+}
+
+/* =========================
+   MOBILE
+   320px - 767px
+========================= */
+
+@media screen and (max-width: 767px) {
+  .backdrop {
+    padding: 16px;
+    align-items: flex-start;
+    overflow-y: auto;
+  }
+
+  .modal {
+    max-width: 100%;
+    margin: 16px 0;
+    padding: 48px 20px 24px;
+    border-radius: 24px;
+  }
+
+  .closeButton {
+    top: 16px;
+    right: 16px;
+  }
+
+  .closeIcon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .title {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 30px;
+  }
+
+  .description {
+    margin-bottom: 28px;
+    font-size: 14px;
+  }
+
+  .psychologistInfo {
+    margin-bottom: 28px;
+  }
+
+  .form {
+    gap: 14px;
+  }
+
+  .formRow {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .field {
+    width: 100%;
+  }
+
+  .input {
+    height: 50px;
+  }
+
+  .textarea {
+    min-height: 110px;
+  }
+
+  .timeButton {
+    height: 50px;
+  }
+
+  .timeDropdown {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+
+  .submitButton {
+    margin-top: 10px;
+  }
+}
